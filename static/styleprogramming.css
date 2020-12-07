@@ -1,0 +1,215 @@
+body {
+font-family: Trebuchet MS, sans-serif ;
+color: #313131 ;
+background-color: #D7E0E0;
+}
+
+h1 {
+font-size:50px ;
+}
+
+p{
+line-height:0.4 ;
+}
+
+div.a {
+
+z-index:1 ;
+text-align: center ;
+line-height: 0.2 ; 
+position: relative ;
+
+width: 400px ;
+
+background-color: #dddddd ;
+padding: 20px ;
+border-color: #313131 ;
+border: 2px ;
+border-style: solid;
+}
+
+div.b {
+
+position: absolute ;
+
+top: 15% ;
+left: 50% ;
+transform: translate(-50%, -50%);
+
+
+background-color: #dddddd ;
+padding: 10px ;
+border-color: #313131 ;
+border: 8px ;
+border-style: solid;
+
+animation-name: cardBounce;
+animation-duration: 2s;
+animation-iteration-count: 1;
+}
+
+
+
+div.gridcontainer {
+
+
+display: grid;
+grid-template-columns: auto auto;
+justify-items: center;
+align-items:center;
+padding: 10px;
+
+
+z-index:3 ;
+position: absolute ;
+
+left: 50% ;
+width:75% ;
+height: 50% ;
+top:30% ;
+
+transform: translate(-50%);
+
+
+padding: 6px ;
+border-color: #313131 ;
+border: 8px ;
+
+}
+
+div.infobox{
+
+background-color: white ;
+box-shadow: 10px 5px 5px black;
+padding: 20px;
+font-size: 30px;
+text-align: center;
+width: 80% ;
+height: 65% ;
+
+animation-name: infofade;
+animation-delay: 1.35s ;
+animation-duration: 0.3s;
+animation-iteration-count: 1;
+animation-fill-mode: both;
+
+}
+
+
+
+
+
+div.verticalribbon{
+
+z-index: -2 ;
+
+text-align: center ;
+
+border-left: 6px solid #313131;
+border-right: 6px solid #313131;
+
+transform: translate(-50%);
+height: 100%;
+position: absolute ;
+left: 50%;
+top: 0;
+width: 80% ;
+
+background-color: #017D7D ;
+color: #017D7D ;
+
+animation-name: ribbonLoad;
+animation-duration: 2s;
+animation-iteration-count: 1;
+
+}
+
+a{
+color: #313131;
+text-decoration:none;
+}
+
+a:hover{
+color:#dddddd;
+text-shadow: 4px 4px 6px #000000;
+}
+
+
+p.tag {
+position: absolute;
+text-align:center;
+bottom: 10px ;
+font-family: Trebuchet MS, sans-serif ;
+color: #313131 ;
+left:50% ;
+transform: translate(-50%);
+}
+
+
+@keyframes infofade {
+    0% {
+        opacity: 0 ;
+        width: 0% ;
+        height: 0% ;
+    }
+    100%{
+        opacity: 1.0;
+        width: 80% ;
+        height: 65% ;
+    }
+
+
+}
+
+
+@keyframes infoexp {
+    0% {
+        width: 80% ;
+        height: 65% ;
+    }
+    
+    100% {
+        width: 85% ;
+        height: 70% ;
+    }
+
+}
+
+
+
+
+
+@keyframes cardBounce {
+    0% {
+        top:15%
+    }
+    50% {
+        top:50%
+    }
+    100% {
+        top:15%
+    }
+
+}
+@keyframes ribbonLoad {
+    0% {
+        width:80%
+    }
+    50% {
+        width:10%
+    }
+    100% {
+        width:80%
+    }
+}
+
+@keyframes ribbonExp {
+    0% {
+        width: 20% ;
+    }
+    
+    
+    100% {
+        width: 80%;       
+    }
+}

@@ -1,0 +1,190 @@
+body {
+font-family: Trebuchet MS, sans-serif ;
+color: #313131 ;
+background-color: #D7E0E0 ;
+}
+
+h1 {
+font-size:50px ;
+color: #017D7D ;
+}
+
+p{
+line-height:0.4 ;
+font-size:20px ;
+color: #017D7D ;
+}
+
+div.a {
+
+z-index:1 ;
+text-align: center ;
+line-height: 0.2 ; 
+position: relative ;
+
+width: 400px ;
+
+padding-top: 10px ;
+padding-bottom: 5px;
+
+background-color: #D7E0E0 ;
+
+border-top: 2px solid #017D7D ;
+border-bottom: 2px solid #017D7D;
+
+color: #017D7D ;
+font-family: Trebuchet MS, sans-serif ;
+}
+
+div.b {
+
+position: absolute ;
+
+ 
+top: 15% ;
+left: 50% ;
+transform: translate(-50%, -50%);
+
+
+padding: 20px ;
+
+background-color: #D7E0E0 ;
+
+border-top: 8px solid #017D7D ;
+
+color: #017D7D ;
+font-family: Trebuchet MS, sans-serif ;
+
+animation-name: cardBounce;
+animation-duration: 2s;
+animation-iteration-count: 1;
+}
+ 
+
+
+div.verticalribbon{
+
+z-index: -1 ;
+
+text-align: center ;
+
+border-left: 6px solid #017D7D;
+border-right: 6px solid #017D7D;
+
+transform: translate(-50%);
+height: 100%;
+position: absolute ;
+left: 50%;
+top: 0;
+width: 10% ;
+
+color: #017D7D ;
+opacity:0.1;
+
+animation-name: ribbonCon;
+animation-duration: 0.5s;
+animation-iteration-count: 1;
+}
+
+div.b:hover + div.verticalribbon{
+animation-name: ribbonExp;
+animation-duration: 0.5s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+
+div.imagebanner{
+    position: absolute;
+    bottom:60px ;
+    left:50% ;
+    transform: translate(-50%);
+}
+
+
+a{
+color: #017D7D ;
+text-decoration:none;
+font-family: Trebuchet MS, sans-serif ;
+}
+
+a:hover{
+color:#dddddd;
+text-shadow: 4px 4px 6px #000000;
+font-family: Trebuchet MS, sans-serif ;
+}
+
+p.tag {
+position: absolute;
+text-align:center;
+bottom: 10px ;
+font-family: Trebuchet MS, sans-serif ;
+color: #017D7D ;
+left:50% ;
+transform: translate(-50%);
+}
+
+
+
+@keyframes ribbonCon {
+    from {
+        /* height:0%; */
+        width: 80%;
+        opacity:1
+    }
+    to {
+        /* height: 100%; */
+        width: 10%;
+        opacity:0.1
+        
+    }
+}
+
+@keyframes ribbonLoad {
+    0% {
+        width:80%
+        opacity:1
+    }
+    50% {
+        width:10%;
+        opacity:0.1
+    }
+    100% {
+        width:80%;
+        opacity:1
+    }
+}
+
+@keyframes raiseCard {
+    from {
+        top: 50%;
+    }
+    to {
+        top: 15%;       
+    }
+}
+
+@keyframes cardBounce {
+    0% {
+        top:15%
+    }
+    50% {
+        top:50%
+    }
+    100% {
+        top:15%
+    }
+
+}
+
+@keyframes ribbonExp {
+    0% {
+        width: 10% ;
+        opacity:0.1
+    }
+    
+    
+    100% {
+        width: 80%;
+        opacity:1  
+    }
+}
