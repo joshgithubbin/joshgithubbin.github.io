@@ -1,0 +1,9 @@
+<div class="teaching-awards">
+  {% for award in site.data.teaching_awards %}
+  <div class="card mt-3 p-3">
+    <h5 class="font-weight-bold">{{ award.title }}</h5>
+    <p class="text-muted mb-1">{{ award.issuer }} &middot; {{ award.date }}</p>
+    <p class="mb-0">{{ award.description }}</p>
+  </div>
+  {% endfor %}
+</div>
