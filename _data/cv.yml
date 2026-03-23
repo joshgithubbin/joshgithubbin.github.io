@@ -47,20 +47,6 @@ cv:
           - "Dissertation: Dust Reverberation Mapping in Type I Active Galactic Nuclei"
 
     Experience:
-      - company: Widening Participation Unit, Queen's University Belfast
-        position: Senior Academy Tutor
-        location: Belfast, UK
-        start_date: 2024
-        end_date: Present
-
-      - company: School of Maths & Physics, Queen's University Belfast
-        position: Demonstrator
-        location: Belfast, UK
-        start_date: 2023
-        end_date: Present
-        highlights:
-          - "PHY3009 Computational Physics"
-          - "PHY1002 Mathematics for Scientists and Engineers"
 
       - company: Nationwide Building Society
         position: Risk Analyst Lead
@@ -80,19 +66,61 @@ cv:
 
     Skills:
       - name: Programming & Tools
-        level: Expert
         icon: fa-solid fa-code
         keywords: "Python, SQL, R, SAS, Git, LaTeX, HTML, CSS, VBA"
 
       - name: Machine Learning
-        level: Expert
         icon: fa-solid fa-brain
         keywords: "Keras, TensorFlow, PyTorch, Artificial Neural Networks, Convolutional Neural Networks, XGBoost, Random Forests, Linear/Logistic Regression"
 
       - name: Research
-        level: Expert
-        icon: fa-solid fa-telescope
+        icon: fa-solid fa-meteor
         keywords: "Transient Detection, Supernovae, Machine Learning, Data Processing, Automation, AI, Transient Host Galaxies, Transient Classification, Big Data"
+
+    First-Author Publications:
+          - title: "Identifying Transient Hosts in LSST's Deep Drilling Fields with Galaxy Catalogues"
+            authors:
+              - J. G. Weston, D. R. Young, S. J. Smartt, M. Nicholl, M. J. Jarvis, I. H. Whittam
+            publisher: arXiv preprint (accepted by Astrophysical Journal)
+            releaseDate: 2025
+            url: https://arxiv.org/abs/2511.22634
+
+          - title: "Training a convolutional neural network for real–bogus classification in the ATLAS survey"
+            authors:
+              - J. G. Weston, K. W. Smith, S. J. Smartt, J. L. Tonry, H. F. Stevance
+            publisher: RAS Techniques and Instruments
+            releaseDate: 2024
+            url: https://doi.org/10.1093/rasti/rzae027
+
+    Co-authored Publications:
+      - title: "ATLAS100 -- I. A volume-limited sample of supernovae and related transients within 100 Mpc"
+        authors:
+          - S. Srivastav, S. J. Smartt, T. Moore, ... J. G. Weston, et al.
+        publisher: arXiv preprint
+        releaseDate: 2026
+        url: https://arxiv.org/abs/2603.03069
+
+      - title: "Discovery of the Optical and Radio Counterpart to the Fast X-Ray Transient EP 240315a"
+        authors:
+          - J. H. Gillanders, L. Rhodes, S. Srivastav, ... J. G. Weston, et al.
+        publisher: The Astrophysical Journal Letters
+        releaseDate: 2024
+        url: https://arxiv.org/abs/2404.10660
+
+      - title: "Quasi-periodic X-ray eruptions years after a nearby tidal disruption event"
+        authors:
+          - M. Nicholl, D. R. Pasham, A. Mummery, ... J. G. Weston, et al.
+        publisher: Nature
+        releaseDate: 2024
+        url: https://arxiv.org/abs/2409.02181
+
+      - title: "SN 2022jli: A Type Ic Supernova with Periodic Modulation of Its Light Curve and an Unusually Long Rise"
+        authors:
+          - T. Moore, S. J. Smartt, M. Nicholl, ... J. G. Weston, et al.
+        publisher: The Astrophysical Journal Letters
+        releaseDate: 2023
+        url: https://arxiv.org/abs/2309.12750
+
 
     Projects:
       - name: Lestrade
@@ -108,6 +136,33 @@ cv:
           - "Python, Javascript, CSS, Git"
         start_date: 2026
         end_date: Present
+
+    Teaching:
+      - label: "LINAS Intro to Python & Machine Learning"
+        details: "Lead instructor, Queen's University Belfast, Spring 2026"
+      - label: "Senior Academy Tutor (Maths & Physics)"
+        details: "Widening Participation Unit, QUB, 2024–2026"
+      - label: "PHY3009 Computational Physics"
+        details: "Demonstrator, School of Maths & Physics, QUB, 2023–2024"
+      - label: "PHY2006 Mathematical Physics"
+        details: "Demonstrator, School of Maths & Physics, QUB, 2025–2026"
+      - label: "PHY1002 Mathematics for Scientists and Engineers"
+        details: "Demonstrator, School of Maths & Physics, QUB, 2024–2025"
+      - label: "Teaching Fellowship Scheme"
+        details: "In progress — Associate Fellow of the Higher Education Academy (AFHEA)"
+
+    Outreach & Science Communication:
+      - label: "Articles for The Conversation"
+        details: "Queen's University Belfast, March 2026."
+        items:
+          - title: "• How big data is transforming what we know about the universe"
+            url: "https://theconversation.com/how-big-data-is-transforming-what-we-know-about-the-universe-278115"
+          - title: "• World's biggest astronomy camera seeks to answer pressing questions about the universe"
+            url: "https://theconversation.com/worlds-biggest-astronomy-camera-seeks-to-answer-pressing-questions-about-the-universe-277017"
+      - label: "NI Science Festival"
+        details: "Astrophysics Research Centre, QUB, February 2024 & 2025. Assisted at the Astronomy Day, principally at the 'Supernova hunting' booth."
+      - label: "Girls in Maths and Physics"
+        details: "Queen's University Belfast, June 2024 & 2025. Assisted in exoplanet detection programming exercise and 'Supernova hunting' booth."
 
     Certificates:
       - name: IBM Data Science Specialization

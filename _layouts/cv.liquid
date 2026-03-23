@@ -157,7 +157,7 @@ layout: default
               {% elsif section_title == 'Awards' or section_title == 'Honors and Awards' %}
                 {% assign entries = section_entries %}
                 {% include cv/awards.liquid %}
-              {% elsif section_title == 'Publications' %}
+              {% elsif section_title == 'First-Author Publications' or section_title == 'Co-authored Publications' %}
                 {% assign entries = section_entries %}
                 {% include cv/publications.liquid %}
               {% elsif section_title == 'Skills' %}
@@ -178,6 +178,18 @@ layout: default
               {% elsif section_title == 'References' %}
                 {% assign entries = section_entries %}
                 {% include cv/references.liquid %}
+              {% elsif section_title == 'Teaching' or section_title == 'Outreach & Science Communication' %}
+                {% for entry in section_entries %}
+                  <div class="card mt-3 p-3">
+                    <h5 class="font-weight-bold">{{ entry.label }}</h5>
+                    <p class="text-muted mb-1">{{ entry.details }}</p>
+                    {% if entry.items %}
+                      {% for item in entry.items %}
+                        <p class="mb-0"><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></p>
+                      {% endfor %}
+                    {% endif %}
+                  </div>
+                {% endfor %}
               {% else %}
                 <!-- Generic section -->
                 {% for entry in section_entries %}
