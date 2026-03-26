@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://joshgithubbin.github.io/sitemap.xml
+Sitemap: https://jgweston.co.uk/sitemap.xml
