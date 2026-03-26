@@ -2,9 +2,7 @@
 layout: course
 title: LINAS Intro to Python & Machine Learning
 description: This course covers the foundational aspects of machine learning for students in the humanities, from basics of Python programming to constructing a neural network model.
-instructor: J. G. Weston
 year: 2026
-term: Spring
 location: Fellows Room, Institute for Global Peace, Justice and Security
 time: Wednesday, 13:00 - 15:00 (GMT/BST)
 course_id: LINAS-Python
@@ -51,25 +49,25 @@ schedule:
 
 ## Course Overview
 
-- Introduction to the basics of Python and coding a machine learning model, developed for humanities scholars in the Leverhulme Interdisciplinary Network for Algorithmic Solutions (LINAS).
+Introduction to the basics of Python and coding a machine learning model, developed for humanities scholars in the Leverhulme Interdisciplinary Network for Algorithmic Solutions (LINAS).
 
-- The course is divided into three units:
+The course is divided into three units:
 
-- <b>Unit 1: Introduction to Python</b>
+<b>Unit 1: Introduction to Python</b>
 - -Ability to understand the structure of a Python program
 - -Ability to write a basic Python program
 - -To become familiar with the various data types used within a program
 - -Develop the ability to code and implement basic logic
 - -Develop the skills to debug simple programs and errors
 
-- <b>Unit 2: Data Management</b>
+<b>Unit 2: Data Management</b>
 - -Learn how to read and understand data
 - -Understand the different stages of a data analysis workload
 - -Be able to prepare and clean a dataset for analysis
 - -Ability to infer relationships from data
 - -Be able to feed a simple dataset to a rudimentary model
 
-- <b>Unit 3: Data Management</b>
+<b>Unit 3: Data Management</b>
 - -Understand basics of ML model development
 - -Ability to optimise model performance
 - -Understand the differences and strengths of supervised/unsupervised learning
