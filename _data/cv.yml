@@ -81,9 +81,9 @@ cv:
           - title: "Identifying Transient Hosts in LSST's Deep Drilling Fields with Galaxy Catalogues"
             authors:
               - J. G. Weston, D. R. Young, S. J. Smartt, M. Nicholl, M. J. Jarvis, I. H. Whittam
-            publisher: arXiv preprint (accepted by Astrophysical Journal)
+            publisher: The Astrophysical Journal
             releaseDate: 2025
-            url: https://arxiv.org/abs/2511.22634
+            url: https://iopscience.iop.org/article/10.3847/1538-4357/ae4e1a
 
           - title: "Training a convolutional neural network for real–bogus classification in the ATLAS survey"
             authors:
@@ -99,6 +99,13 @@ cv:
         publisher: arXiv preprint
         releaseDate: 2026
         url: https://arxiv.org/abs/2603.03069
+
+      - title: "Anomaly Hunter for Alerts (AHA): Anomaly Detection in the ZTF Transient Alert Stream"
+        authors:
+          - L. Iskandarli, C. J. Lintott, S. Croft, H. Stevance, J. G. Weston
+        publisher: arXiv preprint
+        releaseDate: 2026
+        url: https://arxiv.org/abs/2602.12955v1
 
       - title: "Discovery of the Optical and Radio Counterpart to the Fast X-Ray Transient EP 240315a"
         authors:
