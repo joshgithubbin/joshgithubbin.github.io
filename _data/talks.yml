@@ -1,3 +1,17 @@
+- title: "Expert Eyeballing for the Rubin Reliability Factor"
+  venue: "DESC TD Telecon"
+  location: "Online"
+  date: "March 2026"
+  materials: /assets/pdf/talk/DESC-TD-Mar26.pdf
+  details: https://lsstdesc.org/index.html
+
+- title: "Knowledge Production in the Age of AI"
+  venue: "MPLS AI & Ethics Conference"
+  location: "University of Oxford"
+  date: "January 2026"
+  materials:
+  details: https://www.mpls.ox.ac.uk/training/mpls-researcher-conference
+
 - title: "Identifying Transient Hosts in the LSST Deep Drilling Fields"
   venue: "NAM 2025"
   location: "Durham University"
