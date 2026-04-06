@@ -9,7 +9,7 @@
   venue: "MPLS AI & Ethics Conference"
   location: "University of Oxford"
   date: "January 2026"
-  materials:
+  materials: /assets/pdf/talks/MPLS-AI-Jan26.pdf
   details: https://www.mpls.ox.ac.uk/training/mpls-researcher-conference
 
 - title: "Identifying Transient Hosts in the LSST Deep Drilling Fields"
@@ -17,22 +17,21 @@
   location: "Durham University"
   date: "July 2025"
   materials:
-  details:
+  details: https://conference.astro.dur.ac.uk/event/7/
 
 - title: "Identifying Transient Hosts in the LSST Deep Drilling Fields"
   venue: "EAS 2025"
   location: "University College Cork"
   date: "June 2025"
   materials:
-  recording:
-  transcript:
+  details: https://eas.unige.ch/EAS2025/
 
 - title: "Identifying Transient Hosts in the LSST Deep Drilling Fields"
   venue: "Rubin Alerts and Broker Workshop"
   location: "University of Oxford"
   date: "January 2025"
   materials:
-  details:
+  details: https://lsst-uk.atlassian.net/wiki/spaces/HOME/pages/3825500175/Rubin+alerts+and+broker+workshop+-+14-15+January+2025+Oxford
 
 - title: "Improvements to the ATLAS Real/Bogus Classifier"
   venue: "LINAS PGR Conference"
