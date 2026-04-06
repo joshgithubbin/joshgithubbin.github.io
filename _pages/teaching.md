@@ -4,7 +4,7 @@ permalink: /teaching/
 title: teaching
 description: Teaching and demonstrating at Queen's University Belfast.
 nav: true
-nav_order: 6
+nav_order: 7
 ---
 
 ## Awards & Accreditation
