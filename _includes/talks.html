@@ -1,33 +1,86 @@
 <div class="talks">
-  {% for talk in site.data.talks %}
-  <div class="card mt-3 p-3">
-    <div class="row">
-      <div class="col-sm-9">
-        <h5 class="font-weight-bold">{{ talk.title }}</h5>
-        <p class="text-muted mb-1">{{ talk.venue }} &middot; {{ talk.location }}</p>
-        <p class="text-muted mb-0">{{ talk.date }}</p>
-      </div>
-      <div class="col-sm-3 d-flex flex-column align-items-end justify-content-center">
-        {% if talk.materials %}
-          <a href="{{ talk.materials }}" target="_blank" class="btn btn-sm btn-outline-primary mb-1" style="width: 160px;">
-            <i class="fa-solid fa-file-powerpoint"></i> Talk Materials
-          </a>
-        {% else %}
-          <button class="btn btn-sm btn-outline-secondary mb-1" style="width: 160px;" disabled>
-            <i class="fa-solid fa-file-powerpoint"></i> Talk Materials
-          </button>
-        {% endif %}
-        {% if talk.details %}
-          <a href="{{ talk.details }}" target="_blank" class="btn btn-sm btn-outline-primary mb-1" style="width: 160px;">
-            <i class="fa-solid fa-circle-info"></i> Meeting Details
-          </a>
-        {% else %}
-          <button class="btn btn-sm btn-outline-secondary mb-1" style="width: 160px;" disabled>
-            <i class="fa-solid fa-circle-info"></i> Meeting Details
-          </button>
-        {% endif %}
-      </div>
+  <!-- Search and filter controls -->
+  <div class="mb-3">
+    <input type="text" id="talk-search" class="form-control" placeholder="Search talks...">
+  </div>
+  <div class="mb-3">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="latest-only">
+      <label class="form-check-label" for="latest-only">
+        Show only latest instance of each talk
+      </label>
     </div>
   </div>
-  {% endfor %}
+
+  <!-- Talk cards -->
+  <div id="talks-list">
+    {% for talk in site.data.talks %}
+    <div class="card mt-3 p-3 talk-card" 
+         data-title="{{ talk.title | downcase }}"
+         data-venue="{{ talk.venue | downcase }}"
+         data-location="{{ talk.location | downcase }}">
+      <div class="row">
+        <div class="col-sm-9">
+          <h5 class="font-weight-bold">{{ talk.title }}</h5>
+          <p class="text-muted mb-1">{{ talk.venue }} &middot; {{ talk.location }}</p>
+          <p class="text-muted mb-0">{{ talk.date }}</p>
+        </div>
+        <div class="col-sm-3 d-flex flex-column align-items-end justify-content-center">
+          {% if talk.materials %}
+            <a href="{{ talk.materials }}" target="_blank" class="btn btn-sm btn-outline-primary mb-1" style="width: 160px;">
+              <i class="fa-solid fa-file-powerpoint"></i> Talk Materials
+            </a>
+          {% else %}
+            <button class="btn btn-sm btn-outline-secondary mb-1" style="width: 160px;" disabled>
+              <i class="fa-solid fa-file-powerpoint"></i> Talk Materials
+            </button>
+          {% endif %}
+          {% if talk.details %}
+            <a href="{{ talk.details }}" target="_blank" class="btn btn-sm btn-outline-primary mb-1" style="width: 160px;">
+              <i class="fa-solid fa-circle-info"></i> Meeting Details
+            </a>
+          {% else %}
+            <button class="btn btn-sm btn-outline-secondary mb-1" style="width: 160px;" disabled>
+              <i class="fa-solid fa-circle-info"></i> Meeting Details
+            </button>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 </div>
+
+<script>
+  const searchInput = document.getElementById('talk-search');
+  const latestOnly = document.getElementById('latest-only');
+  const cards = document.querySelectorAll('.talk-card');
+
+  function filterTalks() {
+    const query = searchInput.value.toLowerCase();
+    const showLatest = latestOnly.checked;
+    const seenTitles = new Set();
+
+    cards.forEach(card => {
+      const title = card.dataset.title;
+      const venue = card.dataset.venue;
+      const location = card.dataset.location;
+      const matchesSearch = title.includes(query) || venue.includes(query) || location.includes(query);
+
+      let showCard = matchesSearch;
+
+      if (showLatest && matchesSearch) {
+        if (seenTitles.has(title)) {
+          showCard = false;
+        } else {
+          seenTitles.add(title);
+        }
+      }
+
+      card.style.display = showCard ? 'block' : 'none';
+    });
+  }
+
+  searchInput.addEventListener('input', filterTalks);
+  latestOnly.addEventListener('change', filterTalks);
+</script>
