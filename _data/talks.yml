@@ -2,7 +2,7 @@
   venue: "DESC TD Telecon"
   location: "Online"
   date: "March 2026"
-  materials: /assets/pdf/talk/DESC-TD-Mar26.pdf
+  materials: /assets/pdf/talks/DESC-TD-Mar26.pdf
   details: https://lsstdesc.org/index.html
 
 - title: "Knowledge Production in the Age of AI"
