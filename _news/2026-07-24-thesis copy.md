@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Presentation: Expert Eyeballing for Rubin Difference Detectives"
-date: 2026-07-34
+date: 2026-07-24
 inline: true
 ---
 
