@@ -1,4 +1,25 @@
 - title: "Expert Eyeballing for the Rubin Reliability Factor"
+  venue: "NAM 2026"
+  location: "University of Birmingham"
+  date: "July 2026"
+  materials: /assets/pdf/talks/NAM-CS.pdf
+  details: https://uobevents-national-astronomy-meeting-2026.eventsairsite.com/
+
+  - title: "Astronomy, Noesis and the AI Co-Scientist"
+  venue: "NAM 2026"
+  location: "University of Birmingham"
+  date: "July 2026"
+  materials: 
+  details: https://uobevents-national-astronomy-meeting-2026.eventsairsite.com/
+
+  - title: "Identifying Transient Hosts in the LSST Deep Drilling Fields"
+  venue: "NAM 2026"
+  location: "University of Birmingham"
+  date: "July 2026"
+  materials: /assets/pdf/talks/NAM-DDF.pdf
+  details: https://uobevents-national-astronomy-meeting-2026.eventsairsite.com/
+
+- title: "Expert Eyeballing for the Rubin Reliability Factor"
   venue: "Lasair User Meeting"
   location: "University of Manchester"
   date: "April 2026"
