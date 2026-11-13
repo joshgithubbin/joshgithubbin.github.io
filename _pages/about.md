@@ -29,8 +29,8 @@ latest_posts:
 
 Thanks for looking me up!
 
-I'm a finishing Leverhulme Doctoral Scholar as a member of the Astrophysics Research Centre at Queen's University Belfast (QUB). I'm also a part of the Leverhulme Interdisciplinary Network on Algorithmic Solutions (LINAS) at QUB's Institute for Global Peace, Justice and Security.
+I'm a data scientist specialising in AI and big data processing, currently based in industry in Belfast. I recently completed a PhD in the Astrophysics Research Centre at Queen's University Belfast, as part of the Leverhulme Interdisciplinary Network on Algorithmic Solutions (LINAS). My research focused on automated transient detection and classification in the era of big data, applying machine learning techniques to surveys such as the Asteroid Terrestrial Impact Last Alert System (ATLAS), the Zwicky Transient Facility (ZTF), and most notably the Legacy Survey of Space and Time (LSST). As part of my interdisciplinary network, I also investigate the epistemological impact of these machine learning tools on the nature of scientific discovery, and how to integrate automated techniques in a way that preserves human understanding of our data analysis systems.
 
-My research focuses on astronomical transient detection and classification in the era of big data, applying machine learning techniques to surveys such as the Asteroid Terrestrial Impact Last Alert System (ATLAS), the Zwicky Transient Facility (ZTF), and most notably the Legacy Survey of Space and Time (LSST). As part of my interdisciplinary network, I also investigate the epistemological impact of these machine learning tools on the nature of scientific discovery. 
+Previously I spent two years in risk decision science at Nationwide Building Society, building and monitoring credit risk and fraud detection models. I also produced and presented COVID-19 analysis to the board, helping to direct business decisions across the Society.
 
-My thesis was submitted in <b>July 2026</b> and I am currently looking for work - for collaborations, positions or just a general natter, feel free to reach me at [jweston04@qub.ac.uk](mailto:jweston04@qub.ac.uk).
+If you'd like to talk about data, machine learning, astronomy or the ethics of automation, or just have a general natter, feel free to reach me at [jweston04@qub.ac.uk](mailto:jweston04@qub.ac.uk).

@@ -10,4 +10,3 @@ This week saw the National Astronomy Meeting take place at the University of Bir
 - Expert Eyeballing for Rubin Difference Detectives
 - Astronomy, Noesis and AI Co-Science
 - Identifying Transient Hosts in LSST's Deep Drilling Fields with Galaxy Catalogues
-
